@@ -1,0 +1,20 @@
+* {
+    /* Reset estilos */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black; /*Para ver el borde de las contenedores*/
+}
+
+/* Esto ordena a header - main - footer */
+body {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header - HOME */
+.header{
+    display: grid;
+}
