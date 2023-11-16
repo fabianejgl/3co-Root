@@ -1,83 +1,81 @@
-/* @import url("/css/styles-root.css"); */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
-
-:root {
-    font-size: 16px; /*!tamaño raíz*/
-    --color-main: #F6F5FF;
-    --color-header-footer: #EDEAE0;
-    --color-texto-main: black;           /*a cambiar*/
-    
-    --color-titulos: #125115;
-    --color-subtitulo: #367E34;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
+@import url("/css/styles-root.css");
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-
-    background-image: url(../imgs/fondo-formularios.jpg);
+    height: auto;
+    background-image: url(../imgs/img-formulario/fondo-formulario.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-input {
-    border-radius: 27px;
-    width: auto;
-    height: 10%;
-    padding: 30px;
-    margin-top: 51px;
-/*     margin-bottom: 51px; */
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid #C2C5E1;
-
-}
-
-::placeholder {
-    color: #644035;
-}
-
-h1 {
-    color: #644035;
-    font-weight: bold;
-}
-
-h2 {
-    color: #9096B2;
-    font-size: 62%;
-    font-weight: 400;
-}
-
-h2 b {
-    color: var(--color-subtitulo);
-}
-
 .formularios {
     background-color: var(--color-main);
-    width: 57%;
+    width: 75vw;
     height: auto;
-    border-radius: 47px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    border-radius: 15px;
+    margin: 5vh auto;
+    padding-top: 2vh;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    h1 {
+        color: #644035;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .inputContacto {
+            border: 1px solid #C2C5E1;
+            border-radius: 15px;
+            padding: 3.5vw;
+            margin: 4vw 4vw auto;
+
+        }
+
+            ::placeholder {
+                color: #644035;
+            }
+
+
+    .botonEnvioFormulario {
+        background-color:  var(--color-subtitulo);
+        color: white;
+        font-size: 3vw;
+        border-radius: 8px;
+        margin: 3vw;
+        width: 20vw;
+        padding: 1vw;
+    }
+
+
+@media screen and (min-width:850px) {
+    .formularios{
+        width: 40vw;
+        border-radius: 20px;
+        padding-top: 2vh;
+    }
+
+    h1 {
+        font-size: 2vw;
+    }
+
+    .inputContacto{
+        border-radius: 15px;
+        padding: 1vw;
+        margin: 2vw 2vw auto;
+    }
+
+    .botonEnvioFormulario {
+        font-size: 1.5vw;
+        border-radius: 15px;
+        margin: 3vw;
+        width: 10vw;
+        padding: 1vw;
+    }
 }
