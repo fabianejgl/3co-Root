@@ -11,7 +11,7 @@ document.getElementById("idheader").innerHTML = `
     <!-- DER: Buscador --- persona, carrito, menú hamburguesa-->
     <div class="nav-header">
         <div class="buscador">
-            <input type="text" placeholder="Buscar productos, vendedores...">
+            <input type="text" placeholder="Buscar productos...">
             <button><img src="imgs/img-root/lupa.png" alt="Icono de usuario"></button>
         </div>
         
@@ -27,7 +27,9 @@ document.getElementById("idfooter").innerHTML = `
         <ul>
             <p class="eco-root"><span>3</span>CO <span>R</span>OOT</p>
             <p>CABA, Argentina</p>
-            <a href="https://www.pescar.org.ar/" target="_blank"><strong>Fundación Pescar</strong></a>
+            <div class="links-footer">
+                <a href="https://www.pescar.org.ar/" target="_blank"><strong>Fundación Pescar</strong></a>
+            <div>
 
             <!-- <div class="redes">
 
@@ -36,18 +38,20 @@ document.getElementById("idfooter").innerHTML = `
         <ul>
             <p class="titulo-footer"><strong>Categorías</strong></p>
             <div class="links-footer">
-                <a id="reciclado" href="">Reciclados</a>
-                <a id="reutilizable" href="">Reutilizables</a>
-                <a id="biodeg" href="">Biodegradables</a>
-                <a id="seg-mano" href="">Segunda Mano</a>
-                <a id="restau" href="">Restaurados</a>
-            </div>                
+                <a href="">Reciclados</a>
+                <a href="">Reutilizables</a>
+                <a href="">Biodegradables</a>
+                <a href="">Segunda Mano</a>
+                <a href="">Restaurados</a>
+            </div>
         </ul>
         <ul>
-            <p class="titulo-footer"><strong>Contacto</strong></p>
+            <p class="titulo-footer"><strong>Info</strong></p>
             <!-- <div class="links-footer">     -->
-            <a id="nosotros" href="">Sobre nosotros</a>
-            <a id="noticias" href="">Noticias sustentables</a>
+            <div class="links-footer">
+                <a id="nosotros" href="">Sobre nosotros</a>
+                <a id="noticias" href="">Noticias sustentables</a>
+            </div>
             <!-- </div> -->
         </ul>
     </div>
