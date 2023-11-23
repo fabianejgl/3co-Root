@@ -15,8 +15,8 @@ main {
     width: 75vw;
     height: auto;
     border-radius: 15px;
-    margin: 5vh auto;
-    padding-top: 2vh;
+    margin: 10vw auto;
+    padding-top: 4vw;
 }
 
     h1 {
@@ -58,7 +58,8 @@ main {
     .formularios{
         width: 40vw;
         border-radius: 20px;
-        padding-top: 2vh;
+        margin: 2.5vw auto;
+        padding-top: 1.5vw;
     }
 
     h1 {
