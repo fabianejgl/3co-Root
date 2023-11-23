@@ -193,7 +193,7 @@ footer{
     /* Estilo-buscador*/
     #idheader .nav-header .buscador{
         width: 60%;
-        padding: 0.6vw;
+        padding: 0.5vw;
     }
     #idheader .nav-header .buscador input[type="text"] {
         height: 0.1vh;

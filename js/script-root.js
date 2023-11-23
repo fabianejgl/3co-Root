@@ -12,13 +12,13 @@ document.getElementById("idheader").innerHTML = `
     <div class="nav-header">
         <div class="buscador">
             <input type="text" placeholder="Buscar productos...">
-            <button><img src="imgs/img-root/lupa.png" alt="Icono de usuario"></button>
+            <button><img src="imgs/img-root/lupa.svg" alt="Icono de búsqueda"></button>
         </div>
         
         <div class="icons">
-            <a href=""><img src="imgs/img-root/usuario.png" alt="Icono de usuario"></a>
-            <a href=""><img src="imgs/img-root/carro.png" alt="Icono de carrito de compras"></a>
-            <a href=""><img src="imgs/img-root/menu.png" alt="Icono de menú desplegable"></a>
+            <a href=""><img src="imgs/img-root/usuario.svg" alt="Icono de usuario"></a>
+            <a href=""><img src="imgs/img-root/carro.svg" alt="Icono de carrito de compras"></a>
+            <a href=""><img src="imgs/img-root/menu.svg" alt="Icono de menú desplegable"></a>
         </div>
     </div>
 `
