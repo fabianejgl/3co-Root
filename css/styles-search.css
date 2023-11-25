@@ -1,0 +1,183 @@
+@import url("styles-root.css"); /*!IMPORTO ESTILOS ROOT*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.resultados{
+    width: 100%;
+    font-size: 1.4em;
+    background-color: rgba(72, 146, 75, 0.7);
+    padding: 10px 50px;
+    color: #FFFFFF;
+}
+/* ******************FILTROS*************** */
+.contenedor-filtrar{
+    padding: 5px 4px;
+}
+    .contenedor-filtrar .titulo-filtrar{
+        font-size: 1em;
+        font-weight: bold;
+        /* margin: 5px 0; */
+    }
+    .contenedor-filtros-categorias{
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .contenedor-filtros-categorias .boton-filtro{
+            margin-right: 6px;
+            padding:  0 2px 2px 2px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #FFFFFF;
+        }
+        .contenedor-filtros-categorias .filtro{
+            font-size: 0.7em;
+            font-weight: 400;
+            color: rgb(81, 81, 81)
+        }
+
+
+/* ******************PRODUCTOS ENCONTRADOS*************** */
+
+.contenedor-productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5px;
+    /* background-color: #F6F5FF; */
+}
+.contenedor-productos .producto{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 4px 2px;
+    border: 0.5px solid rgb(191, 191, 191);
+    border-radius: 5%;
+}
+.contenedor-productos .producto .imagen-producto{
+    margin: 5px 0;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    align-self: center;
+}
+.contenedor-productos .producto .nombre-producto{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.contenedor-productos .producto div{
+    margin-bottom: 4px;
+}
+.contenedor-productos .producto div .categoria-producto{
+    padding: 2px;
+    font-size: 0.7em;
+    color: white;
+    background-color: /* rgb(107, 139, 107); */ rgb(160, 190, 160);
+}
+.contenedor-productos .producto .precio-producto{
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.contenedor-productos .producto .boton-agregar-carrito{
+    margin-bottom: 8px;
+    border-radius: 7px;
+    /* padding: 2px; */
+    background-color: rgb(160, 190, 160);
+    
+}
+.contenedor-productos .producto .boton-agregar-carrito .agregar-carrito{
+    /* color: white; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3em;
+}
+
+
+
+
+@media screen and (min-width:1000px) {
+    .resultados{
+        font-size: 1.8em;
+        padding: 20px 60px;
+    }
+/* ******************FILTROS*************** */    
+    .main{
+        display: flex;
+    }
+    .contenedor-filtrar{
+        width: 20%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .contenedor-filtrar .titulo-filtrar{
+        font-size: 1.5em;
+    }
+    .contenedor-filtros-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        
+    }
+    .contenedor-filtros-categorias .boton-filtro{
+        background-color: #FFFFFF;
+        border: none;
+    }
+    .contenedor-filtros-categorias .filtro{
+        font-size: 1.2em;
+    }
+    .contenedor-filtros-categorias .filtro:hover{
+        color: rgba(72, 146, 75, 0.7);
+    }
+
+/* ******************PRODUCTOS ENCONTRADOS*************** */
+   .contenedor-productos{
+        width: 80%;
+        margin: 20px 0;
+   }
+
+   .contenedor-productos .producto{
+        width: 320px;
+        padding: 5px 10px;
+        margin: 5px;
+   }
+   .contenedor-productos .producto:hover{
+        cursor: pointer;
+        border: 1px solid black;
+   }
+   .contenedor-productos .producto .imagen-producto{
+        width: 230px;
+        height: 230px;
+   }
+   .contenedor-productos .producto .nombre-producto{
+        font-size: 1.4em;
+        font-weight: 200;
+        margin-bottom: 5px;
+   }
+   .contenedor-productos .producto div{
+        margin-bottom: 5px;
+   }
+   .contenedor-productos .producto div .categoria-producto{
+        font-size: 0.8em;
+   }
+   .contenedor-productos .producto .precio-producto{
+        font-size: 1.3em;
+        margin-bottom: 5px;
+   }
+   .contenedor-productos .producto .boton-agregar-carrito{
+        cursor: pointer;
+        align-self: center;
+        width: 150px;
+        
+   }
+    
+
+}

@@ -2,7 +2,7 @@ if(window.screen.width <= 640 ) {
     var swiper2 = new Swiper(".mySwiperSM", {
       slidesPerView: 1,
       centeredSlides: false,
-      spaceBetween: 30,
+      spaceBetween: 50,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
