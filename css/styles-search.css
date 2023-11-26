@@ -88,17 +88,19 @@
     font-weight: 600;
 }
 .contenedor-productos .producto .boton-agregar-carrito{
-    margin-bottom: 8px;
+/*     margin-bottom: 8px;
     border-radius: 7px;
-    /* padding: 2px; */
     background-color: rgb(160, 190, 160);
-    
-}
-.contenedor-productos .producto .boton-agregar-carrito .agregar-carrito{
-    /* color: white; */
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3em; */
+    background-color:  var(--color-subtitulos-main);
+    color: white;
+    font-size: 0.8em;
+    border-radius: 7px;
+    border: none;
+    margin: 0 3px 6px;
 }
+
 
 
 
@@ -175,9 +177,16 @@
    .contenedor-productos .producto .boton-agregar-carrito{
         cursor: pointer;
         align-self: center;
-        width: 150px;
-        
+        /* width: 150px; */
+        font-size: 1em;
+        border-radius: 8px;
+        /* width: 100%; */
+        /* height: auto; */
+        padding: 2px 5px;
    }
+   .contenedor-productos .producto .boton-agregar-carrito:hover{
+        box-shadow: 0px 5px 5px  #644035;
+    }
     
 
 }
