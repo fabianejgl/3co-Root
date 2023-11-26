@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles-detalle-producto.css">
     <title>Producto</title>
@@ -12,7 +13,6 @@
 <body>
     <header id="idheader"></header>
     <main>
-
         <div class="top">
             <div>
                 <h1>Detalle de Producto</h1>
@@ -28,12 +28,12 @@
             </div>
         </div>
 
-        <section class="info-producto">
-            <div class="prueba">
+        <section class="info-producto" id="contenedor-producto">
+            <div class="contenedor-detalle-producto">
                 <div #swiperRef="" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./imgs/img-detalle-producto/foto-producto.jpg" alt="">
+                            <img id="imagen-producto" src="./imgs/img-detalle-producto/foto-producto.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img src="./imgs/img-detalle-producto/foto-producto-2.jpg" alt="">
@@ -51,15 +51,15 @@
             </div>
             <div>
                 <div class="fs-4 m-3">
-                    <h1 class="nombre-producto">Botellas recicladas - EcoBottle</h1>
+                    <h1 id="nombre-producto" class="nombre-producto">Botellas recicladas - EcoBottle</h1>
                 </div>
                 <div class="caracteristicas">
-                    <h3 class="m-3">$32.00</h3>
-                    <h4 class="fs-4 m-3 fw-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dignissimos.</h4>
+                    <h3 id="precio-producto" class="m-3">$32.00</h3>
+                    <h4 class="fs-4 m-3 fw-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,dignissimos.</h4>
                 </div>
 
                 <div class="opciones-compra">
-                    <button type="submit" class="botonCompra m-3">Agregar al carrito</button>
+                    <button type="submit" class="btnCompraDetalleProducto m-3 agregar-carrito" data-id="1">Agregar al carrito</button>
                 </div>
 
                 <div class="caracteristicas">
@@ -82,28 +82,28 @@
                             <div class="contenedor-producto">
                                 <img src="./imgs/img-detalle-producto/sugerencia-1.jpg" alt="">
                                 <h1 class="nombre-producto">Men Fashion Wear</h1>
-                                <h3>$43.00</h3>                        
+                                <h3 class="precio-producto-sugerencias">$43.00</h3>                        
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="contenedor-producto">
                                 <img src="./imgs/img-detalle-producto/sugerencia-2.jpg" alt="">
                                 <h1 class="nombre-producto">Women`s Fashion</h1>
-                                <h3>$67.00</h3>                        
+                                <h3 class="precio-producto-sugerencias">$67.00</h3>                        
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="contenedor-producto">
                                 <img src="./imgs/img-detalle-producto/sugerencia-3.jpg" alt="">
                                 <h1 class="nombre-producto">Wolx Dummy Fashion</h1>
-                                <h3>$67.00</h3>                        
+                                <h3 class="precio-producto-sugerencias">$67.00</h3>                        
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="contenedor-producto">
                                 <img src="./imgs/img-detalle-producto/sugerencia-4.jpg" alt="">
                                 <h1 class="nombre-producto">Top Wall Digital Clock</h1>
-                                <h3>$51.00</h3>                        
+                                <h3 class="precio-producto-sugerencias">$51.00</h3>                        
                             </div>
                         </div>
                     </div>
@@ -112,13 +112,19 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
     <footer id="idfooter"></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="script-detalle-del-producto.js"></script>
+
+    <script src="js/script-detalle-del-producto.js"></script>
 
     <script src="js/script-root.js"></script>
 </body>
+
+</html>

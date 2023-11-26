@@ -100,7 +100,7 @@ footer{
     padding-top: 2vw;
 
     /*Posición fija TEMPORALMENTE*/
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
 }

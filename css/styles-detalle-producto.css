@@ -87,11 +87,11 @@ section {
     }
 
     .swiper-button-next{
-        color: var(--color-subtitulo);
+        color: var(--color-subtitulos-main);
     }
 
     .swiper-button-prev{
-        color: var(--color-subtitulo);
+        color: var(--color-subtitulos-main);
     }
 
 /* Fin estilos carrusel */
@@ -103,7 +103,7 @@ section {
 
     .nombre-producto {
         font-weight: 700;
-        color: var(--color-subtitulo);
+        color: var(--color-subtitulos-main);
         text-align: center;
     }
 
@@ -124,18 +124,24 @@ section {
         max-width: 100%;
     }
 
-    .botonCompra {
-        background-color:  var(--color-subtitulo);
+    .btnCompraDetalleProducto {
+        background-color:  var(--color-subtitulos-main);
         color: white;
         font-size: 5vw;
         border-radius: 8px;
         width: 100%;
         height: auto;
         padding: 1vw;
+        border: none;
+    }
+
+    #imagen-carrito{
+        max-width: 18vw;
+        width: auto;
     }
 
 .seccion-sugerencias {
-    color: var(--color-subtitulo);
+    color: var(--color-subtitulos-main);
     font-weight: 700;
 }
     
@@ -145,16 +151,16 @@ section {
     justify-content: space-between;
 }
 
-.contenedor-producto{
-    display: flex;
-    flex-direction: column;
-}
+    .contenedor-producto{
+        display: flex;
+        flex-direction: column;
+    }
 
-/* .prueba {
-    height: auto;
-    width: auto;
-    margin-bottom: 5vw;
-} */
+        .precio-producto-sugerencias{
+            color: #644035;
+            font-weight: 700;
+            font-size: 1.5vw;
+        }
 
 @media screen and (min-width:850px) {
 
@@ -176,31 +182,30 @@ section {
         margin: 5vw;
     }
 
-/*     .nombre-producto {
-        text-align: left;
-    } */
-
     div h3 {
         font-size: 2vw;
     }
 
-    .prueba {
+    .contenedor-detalle-producto {
         width: 50%;
         height: 45vw;
     }
    
-    .botonCompra {
+    .btnCompraDetalleProducto {
         font-size: 1.5vw;
         border-radius: 15px;
         padding: 1vw;
     }
 
-    .botonCompra:hover {
+    .btnCompraDetalleProducto:hover {
         box-shadow: 0px 5px 15px  #644035;
     }
 
     img {
         max-height: 45vw;
     }
-}
 
+    #imagen-carrito{
+        max-width: 8vw;
+    }
+}
