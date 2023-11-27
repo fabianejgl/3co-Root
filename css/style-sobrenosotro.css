@@ -125,6 +125,12 @@ p {
     opacity: 5;
 }
 
+.gallery p {
+    font-size: medium;
+    margin: auto;
+    text-align: center;
+}
+
 
 /*Estilo para los objetivos*/
 .objetivos {
