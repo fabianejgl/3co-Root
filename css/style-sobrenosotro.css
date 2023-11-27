@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=IBM+Plex+Sans+Hebrew&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(246, 245, 255, 1);
+}
+
+/*Estilo para el titulo */
+.mi-div {
+    background-color: rgba(72, 146, 75, 0.7);
+    text-align: center;
+    font-family: 'Inter', serif;
+    width: auto;
+    height: 150px;
+    padding: 15px; 
+}
+
+.mi-div h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffff;
+}
+
+
+/*Estilo para el quien somos*/
+section {
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: rgba(237, 234, 224, 1);
+}
+
+h1 {
+    color: #333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+}
+
+p {
+    line-height: 40px;
+    color: #555;
+    font-family: 'IBM Plex Sans Hebrew';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+.container {
+    margin: 100px;
+}
+
+.text-container {
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+/*Galeria de fotos*/
+.image-container {
+    width: 100%; 
+    box-sizing: border-box;
+    background-image: url('../img/fondo.png');
+    background-position: center left;
+    background-repeat: space;
+}
+
+.gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8
+    );
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.image-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 10);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.gallery-item:hover .image-description {
+    opacity: 5;
+}
+
+
+/*Estilo para los objetivos*/
+.objetivos {
+    box-shadow: 10px 10 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-2 {
+    margin: 100px;
+}
+
+h1, #mision {
+    color: #333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 30px;
+}
+
+li {
+    margin: 10px;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'IBM Plex Sans Hebrew';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+li::before {
+    content: "\2022"; 
+    color: rgba(72, 146, 75, 0.7);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.text-container2 {
+    width: 100%
+}
+
+.text-container2 p {
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+
+strong {
+    color: rgba(72, 146, 75, 0.7);
+}
+
+.strong-negro {
+    color: black;
+}
+
+
+
+/* Media queries para hacer responsive */
+
+@media screen and (min-width: 576px) {
+   .mi-div {
+    height: auto;
+   }
+
+   .text-container, .text-container2 {
+    width: auto;
+   }
+
+}
+
+@media screen and (min-width: 768px) {
+   
+    .mi-div {
+        height: auto;
+       }
+    
+       .text-container, .text-container2 {
+        width: auto;
+       }
+
+       
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .mi-div {
+        height: auto;
+       }
+    
+       .text-container, .text-container2 {
+        width: auto;
+       }
+
+}
