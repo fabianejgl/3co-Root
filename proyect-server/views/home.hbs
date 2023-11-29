@@ -1,0 +1,103 @@
+<main>
+    <!-- CONTENEDOR BANNER -->
+    <div class="contenedor-banner">
+        <div class="contenedor-texto">
+            <h2 class="texto-banner">Cada elección cuenta</h2>
+            {{!-- <h2 class="texto-banner">RECICLAR</h2> --}}
+            <h2 class="texto-banner">Cada acción importa</h2>
+        </div>
+        <div class="boton-sobre-nosotros"><a href="/quienes-somos">Sobre nosotros</a></div>
+        <img class="imagen-banner"  src="imgs/banner.jpg" alt="Banner ecológico">
+        <img class="imagen-banner-responsive" src="imgs/banner-responsive.jpg" alt="">
+    </div>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <div class="contenedor-productos-destacados">
+        <h2 class="titulo-productos-destacados">PRODUCTOS DESTACADOS</h2>
+        <div class="contenedor-productos">
+            {{#each productos }}
+            <div>
+                <div class="contenedor-producto">
+                    <a class="producto" href="/detalle-producto/{{this._id}}">
+                        <img class="imagen-producto" src="{{this.fotos.[0]}}" alt="producto">
+                        <h2 class="nombre-producto">{{this.nombre}}</h2>
+                        <p class="precio-producto">${{this.precio}}</p>
+                        <div class="contenedor-categoria-producto"><span class="categoria-producto">{{this.categoria.nombre}}</span></div>
+                    </a>
+                    <button class="boton-agregar-carrito sumar-carrito" data-id="{{this._id}}">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+    <!-- CATEGORIAS -->
+    <div class="contenedor-categorias">
+        <h2>CATEGORÍAS</h2>
+        <div class="contenedor-tarjetas-categorias">
+            {{!-- <div class="clasepadre"> DE DÓNDE SALIÓ ESTO--}}
+            {{#each categorias }}
+                <div class="categoria">
+                    <a class="link-categoria" href="/busqueda-producto/{{this._id}}"><img class="imagen-categoria" src="{{this.path}}" alt=""></a>
+                    <p class="titulo-categoria">{{this.nombre}}</p>
+                </div>
+            {{/each}}
+            {{!-- </div> --}}
+        </div>
+    </div>
+
+
+    <!-- NOTICIAS -->
+
+    <div class="contenedor-noticias-sustentables">
+        <h2 class="titulo-noticias-sustentables">Últimas noticias sobre medioambiente</h2>
+        <div #swiperRef="" class="swiper mySwiper mySwiperSM">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="noticia-slide">
+                            <a href="https://acortar.link/2bQETO" target="_blank">
+                                <img class="imagen-noticia"  src="https://acortar.link/t865MH" alt="">
+                                <p class="titulo-noticia">Toyota comenzó a reciclar las baterías de sus autos híbridos más antiguos</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="noticia-slide">
+                            <a href="https://acortar.link/8xCMa9" target="_blank">
+                                <img class="imagen-noticia"  src="https://acortar.link/OJQY8o" alt="">
+                                <p class="titulo-noticia">Microsoft: más de 300 personas voluntarias en tareas de sostenibilidad</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="noticia-slide">
+                            <a href="https://acortar.link/ZNl6V3" target="_blank">
+                                <img class="imagen-noticia" src="https://acortar.link/zuoHkJ" alt="">
+                                <p class="titulo-noticia">Cómo es el reciclado de plásticos en Argentina</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="noticia-slide">
+                            <a href="https://acortar.link/F4vYLf" target="_blank">
+                                <img class="imagen-noticia" src="https://acortar.link/SfonRz" alt="">
+                                <p class="titulo-noticia">8 pequeñas acciones que pueden generar grandes cambios en el planeta</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="noticia-slide">
+                            <a href="https://acortar.link/BsCkTM" target="_blank">
+                                <img class="imagen-noticia" src="https://acortar.link/aXSP9r" alt="">
+                                <p class="titulo-noticia">1 millón de toneladas anuales de aditivos de plástico desembocan en los océanos</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    </main>

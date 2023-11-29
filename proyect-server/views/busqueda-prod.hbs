@@ -1,0 +1,35 @@
+
+{{!-- <main> --}}
+<h1 class="resultados">Resultados para "<span class="palabra-buscada">{{query}}</span>"</h1>
+
+<main class="main">
+
+    <div class="contenedor-filtrar">
+        <h2 class="titulo-filtrar">Filtrar por categoria</h2>
+        <div class="contenedor-filtros-categorias">
+            <a id="quitar-filtros" href="/busqueda-producto" class="boton-filtro">Limpiar Categorías</a>
+            {{#each categorias }}
+                <a href="/busqueda-producto/{{this._id}}" class="boton-filtro">{{this.nombre}}</a>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="contenedor-productos">
+        {{#each productos }}
+        {{!-- !!Problem. Borrar id="lista-producto" arriba (y el div creado abajo- no, el div no cambia nada) --}}
+        <div class="div-funcional">
+            {{!-- <div class="contenedor-producto"></div> --}}
+            <div class="contenedor-producto">
+                <a class="producto" href="/detalle-producto/{{this._id}}">
+                    <img class="imagen-producto" src="/{{this.fotos.[0]}}">
+                    <h2 class="nombre-producto">{{this.nombre}}</h2>
+                    <div><span class="categoria-producto">{{this.categoria.nombre}}</span></div>
+                    <p class="precio-producto">${{this.precio}}</p>
+                </a>
+                <button class="boton-agregar-carrito sumar-carrito" data-id="{{this._id}}">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</main>

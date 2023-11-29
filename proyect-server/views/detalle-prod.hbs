@@ -1,0 +1,77 @@
+<main>
+    <div class="top-detalle">
+        <div>
+            <h1>Detalle de Producto</h1>
+        </div>
+        <div>
+            <ul class="camino-producto">
+                <li class=""><a href="/busqueda-producto/{{producto.categoria._id}}" class="links ancho-fuente-4">{{producto.categoria.nombre}}</a></li>
+                <li class="">
+                    <span class="links ancho-fuente-4"><strong>></strong></span>
+                </li>
+                <li class=""><span class="links ancho-fuente-4"><strong>{{producto.nombre}}</strong></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="info-producto contenedor-productos" id="lista-producto">
+        <div class="contenedor-detalle-producto">
+            <div swiperRef="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    {{#each producto.fotos}}
+                    <div class="swiper-slide">
+                        <img id="imagen-producto" src="/{{this}}" alt="">
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="caracteristicas-producto">
+            <div class="tamaño-fuente-4 margen-3">
+                <h2 class="nombre-producto">{{producto.nombre}}</h2>
+            </div>
+            <div class="caracteristicas">
+                <p class="margen-3 detalles-prod-p">Precio: ${{producto.precio}}</p>
+                <h4 class="color-descripcion tamaño-fuente-4 margen-3 ancho-fuente-4">Descripción: {{producto.descripcion}}</h4>
+            </div>
+
+
+            <div class="margen-3 caracteristicas">
+                <span class="color-descripcion">Categorias: {{producto.categoria.nombre}}</span>
+                {{!-- <p class="margen-3">Tags</p> --}}
+                <p class="color-descripcion">Share by: IG - FB - X</p>
+            </div>
+            <button type="submit" class="btnCompraDetalleProducto sumar-carrito" data-id="{{producto._id}}">Agregar al carrito</button>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="seccion-sugerencias tamaño-fuente-4">
+            <h1 >Productos relacionados</h1>
+        </div>
+        <div class="sugerencias">
+            {{!-- TODOOOOOOOO --}}
+            <div #swiperRef="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    {{#each prodRecomendados}}
+                    <div class="swiper-slide">
+                        <div class="contenedor-producto">
+                            <a id="a-recomendado" href="/detalle-producto/{{this._id}}">
+                                <img class="imagen-sugerencia" src="/{{this.fotos.[0]}}" alt="Producto recomendado">
+                                <h2 id="h2-sugerencia" class="nombre-producto">{{this.nombre}}</h2>
+                                <p id="p-sugerencia" class="precio-producto-sugerencias">${{this.precio}}</p>                        
+                            </a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+</main>

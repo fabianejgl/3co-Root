@@ -1,0 +1,90 @@
+@import url("/css/styles-root.css");
+
+main {
+    display: flex;
+    text-align: center;
+    height: auto;
+    background-image: url(/imgs/fondo-formulario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formularios {
+    background-color: var(--color-main);
+    width: 70vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 10vw auto;
+    padding-top: 4vw;
+}
+
+    h1 {
+        color: #644035;
+        font-weight: bold;
+        font-size: 5vw;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .inputProcesarCompra {
+            border: 1px solid #C2C5E1;
+            border-radius: 15px;
+            padding: 2vw;
+            margin: 4vw 4vw auto;
+
+        }
+
+            ::placeholder {
+                color: #644035;
+            }
+
+
+    .botonProcesarCompra {
+        border: none;
+        background-color:  var(--color-subtitulos-main);
+        color: white;
+        font-size: 3vw;
+        border-radius: 8px;
+        margin: 8vw;
+        width: 50%;
+        padding: 1vw;
+    }
+
+    .botonProcesarCompra:hover {
+        border: 0.2px solid var(--color-subtitulos-main);
+        background-color:  var(--color-main);
+        /* box-shadow: 0px 0px 0px  #538c3b; */
+        color: var(--color-subtitulos-main);
+    }
+
+
+@media screen and (min-width:850px) {
+    .formularios{
+        width: 30vw;
+        border-radius: 20px;
+        margin: 2.5vw auto;
+        padding-top: 1.5vw;
+    }
+
+    h1 {
+        font-size: 2vw;
+    }
+
+    .inputProcesarCompra{
+        border-radius: 15px;
+        padding: 1vw;
+        margin: 2vw 2vw auto;
+    }
+
+    .botonProcesarCompra {
+        font-size: 1.5vw;
+        border-radius: 15px;
+        margin: 3vw;
+        width: 50%;
+        padding: 1vw;
+    }
+}

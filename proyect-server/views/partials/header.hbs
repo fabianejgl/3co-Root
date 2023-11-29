@@ -1,0 +1,53 @@
+<header id="idheader">
+
+{{!-- !nuevo - seba --}}
+<!-- IZQ: Logo -->
+    <!-- IZQ: Logo -->
+    <div class="logo">
+        <a id="logo-phone" href="/"><img src="/imgs/img-root/logo.png" alt="Logo de la empresa"></a>
+        <a id="logo-desk" href="/"><img src="/imgs/img-root/logo-h.png" alt="Logo de la empresa"></a>
+    </div>
+
+    <!-- DER: Buscador --- persona, carrito, menú hamburguesa-->
+    <div class="nav-header">
+        {{#if idCategoria}}
+            <form action="/busqueda-producto/{{idCategoria}}" method="get">
+        {{else}}
+            <form action="/busqueda-producto" method="get">
+        {{/if}}
+            <div class="buscador">
+                <input type="text" name="palabraInput" placeholder="Buscar productos..." value="{{query}}">
+                <button type="submit"><img src="/imgs/img-root/lupa.svg" alt="Icono de búsqueda"></button>
+            </div>
+        </form>
+        
+        <div class="icons">
+            <a href="#"><img src="/imgs/img-root/usuario.svg" alt="Icono de usuario"></a>
+
+            <div class="dropdown-center">
+                <img src="/imgs/img-root/carro.svg" alt="Icono de carrito de compras" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div id="carrito" class="dropdown-menu">
+                    <table class="table table-success table-striped-columns">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                    <div class="d-grid gap-2">
+                        <button id="vaciar-carrito" class="btn btn-secondary" type="button">Vaciar Carrito</button>
+                        <a href="/procesar-compra" class="btn-procesar-compra" type="button">Procesar Compra</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</header>

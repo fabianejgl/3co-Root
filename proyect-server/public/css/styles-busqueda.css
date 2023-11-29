@@ -1,0 +1,290 @@
+@import url("styles-root.css"); /*!IMPORTO ESTILOS ROOT*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+} */
+
+.resultados{
+    width: 100%;
+    font-size: 1.4em;
+    background-color: rgba(72, 146, 75, 0.7);
+    padding: 10px 50px;
+    color: #FFFFFF;
+}
+/* ******************FILTROS*************** */
+.contenedor-filtrar{
+    padding: 5px 4px;
+}
+    .contenedor-filtrar .titulo-filtrar{
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        /* margin: 5px 0; */
+    }
+    .contenedor-filtrar .contenedor-filtros-categorias{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-right: 2vw; */
+        align-self: center;
+        flex-direction: column;
+
+    }
+    .contenedor-filtrar .contenedor-filtros-categorias .boton-filtro{
+        font-size: 0.8em;
+            text-align: center;
+            width: 100%;
+            border: 2.5px solid rgb(30, 100, 52);
+            text-decoration: none;
+            /* margin-right: 6px; */
+            /* padding:  0 2px 2px 2px; */
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 1vw 1vw;
+            background-color: #FFFFFF;
+            color: rgb(81, 81, 81)
+            
+        }
+        .contenedor-filtrar .contenedor-filtros-categorias .boton-filtro:hover{
+            background-color: #198754;
+            color: white;
+        }
+        .contenedor-filtrar .contenedor-filtros-categorias #quitar-filtros{
+            background-color: #2a503e;
+            color: white;
+        }
+        .contenedor-filtrar .contenedor-filtros-categorias #quitar-filtros:hover{
+            background-color: #528c71;
+            color: white; 
+        }
+        
+        /* .contenedor-filtrar .contenedor-filtros-categorias .filtro{
+            font-size: 0.7em;
+            font-weight: 400;
+            color: rgb(81, 81, 81)
+        } */
+        
+        
+        
+        /* ******************PRODUCTOS ENCONTRADOS*************** */
+        .contenedor-productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0;
+    padding-bottom: 5%;
+    /* background-color: #
+    F6F5FF; */
+}
+.contenedor-productos .div-funcional{
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 2% 2vw; */
+    margin: 4% 2vw 0 2vw;
+}
+/* .contenedor-productos div .contenedor-producto{
+    object-fit: contain;
+    align-self: center;
+} */
+.contenedor-productos .div-funcional .contenedor-producto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 10px; */
+    /* margin: 4px 2px; */
+    border: 0.5px solid rgb(214, 214, 214);
+    border-radius: 15px;
+}
+.contenedor-productos .div-funcional .contenedor-producto:hover{
+    box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px rgb(216, 216, 216);
+    color: #125115;
+}
+
+
+    .contenedor-productos .div-funcional .contenedor-producto .producto{
+        padding: 0 5%;
+        margin: 5px 0;
+        width: 90%;
+        height: 80%;
+        min-height: 60%;
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+        object-fit: contain;
+        align-self: center;
+
+        text-decoration: none;
+        color: var(--color-subtitulos-main);
+    }
+
+        .contenedor-productos .div-funcional .contenedor-producto .producto .imagen-producto{
+            margin: 5px 0;
+            width: 70%;
+            height: 50%;
+            object-fit: contain;
+            align-self: center;
+            border: 0.5px solid rgba(84, 75, 75, 0.332);
+            border-radius: 7px;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .nombre-producto{
+            font-size: 3.2vw;
+            font-weight: 600;
+            color: #4d4747;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto div{
+            margin-bottom: 4px;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .categoria-producto{
+            padding: 2px;
+            font-size: 0.7em;
+            color: white;
+            background-color: /* rgb(107, 139, 107); */ rgb(160, 190, 160);
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .precio-producto{
+            margin-bottom: 1%;
+            font-size: 3vw;
+            font-weight: 400;
+            color:rgb(129, 123, 123);
+        }
+    .contenedor-productos .div-funcional .contenedor-producto .boton-agregar-carrito{
+    /*     margin-bottom: 8px;
+        border-radius: 7px;
+        background-color: rgb(160, 190, 160);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.3em; */
+        align-self: center;
+        width: 80%;
+        height: 10%;
+        background-color:  var(--color-subtitulos-main);
+        color: white;
+        font-size: 2.3vw;
+        border-radius: 7px;
+        border: none;
+        /* margin: 0 3px 6px; */
+        /* margin-top: auto; */
+    }
+    .contenedor-productos .div-funcional .contenedor-producto .boton-agregar-carrito:hover{
+        /* border: 0.2px solid var(--color-subtitulos-main); */
+        border: 0.2px solid var(--color-subtitulos-main);
+        background-color:  var(--color-main);
+        /* box-shadow: 0px 0px 0px  #538c3b; */
+        color: var(--color-subtitulos-main);
+    }
+
+
+
+
+
+@media screen and (min-width:1000px) {
+    .resultados{
+        font-size: 1.8em;
+        padding: 20px 60px;
+    }
+
+/*! ******************FILTROS*************** */    
+    .main{
+        display: flex;
+    }
+    .contenedor-filtrar{
+        width: 20%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .contenedor-filtrar .titulo-filtrar{
+        font-size: 1.5em;
+    }
+    /* .contenedor-filtrar .contenedor-filtros-categorias .boton-filtro{ */
+    .contenedor-filtros-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .contenedor-filtros-categorias .boton-filtro{
+        background-color: #FFFFFF;
+        border: none;
+    }
+    .contenedor-filtros-categorias .filtro{
+        font-size: 1.2em;
+    }
+    .contenedor-filtros-categorias .filtro:hover{
+        color: rgba(72, 146, 75, 0.7);
+    }
+    .contenedor-filtrar .contenedor-filtros-categorias .boton-filtro{
+        padding: 0.2vw;
+    }
+
+
+
+    /*! ******************PRODUCTOS ENCONTRADOS*************** */
+    .contenedor-productos{
+            width: 80%;
+            margin: 1%;
+    }
+
+    .contenedor-productos .div-funcional{
+        width: 18%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 2% 2vw; */
+        margin: 4% 2vw 0 2vw;
+    }
+
+    .contenedor-productos .div-funcional .contenedor-producto{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-productos .div-funcional .contenedor-producto .producto {
+        padding: 0 5%;
+        margin: 5% 0 0 0;
+        padding-top: 10px;
+        width: 90%;
+        height: 80%;
+        min-height: 60%;        
+    }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .imagen-producto{
+            margin: 5px 0;
+            width: 70%;
+            height: 65%;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .nombre-producto{
+            font-size: 1vw;
+        }        
+
+        .contenedor-productos .div-funcional .contenedor-producto .producto .categoria-producto{
+            font-size: 0.7em;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .producto .precio-producto{
+            margin-bottom: 2%;
+            font-size: 1vw;
+        }
+    .contenedor-productos .div-funcional .contenedor-producto .boton-agregar-carrito{
+            align-self: center;
+            width: 80%;
+            height: 10%;
+            color: white;
+            font-size: 0.9vw;
+            margin-bottom: 5%;
+        }
+        .contenedor-productos .div-funcional .contenedor-producto .boton-agregar-carrito:hover{
+            /* border: 0.2px solid var(--color-subtitulos-main); */
+            border: 0.2px solid var(--color-subtitulos-main);
+            background-color:  var(--color-main);
+            /* box-shadow: 0px 0px 0px  #538c3b; */
+            color: var(--color-subtitulos-main);
+        }
+}
