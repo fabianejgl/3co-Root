@@ -55,3 +55,7 @@ Para conocernos:
 - [Agustina Suárez Valduga](https://www.linkedin.com/in/agustinasuarezvalduga/)
 - [Adrián Aguero](https://www.linkedin.com/in/adri%C3%A1n-ag%C3%BCero/)
 - [Soledad Quispe](https://www.linkedin.com/in/soledadquispe/)
+
+## Agradecimiento
+Para finalizar, queremos agradecer de corazón a Fundación Pescar, Santander y EducacionIT por darnos la oportunidad de capacitarnos tanto en nuevas tecnologías como en habilidades blandas para ayudarnos en la búsqueda de nuestra primer experiencia laboral en tecnología. Muchas gracias por leer.
+Somos 3co-Root
