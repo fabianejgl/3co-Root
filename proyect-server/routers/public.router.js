@@ -15,8 +15,12 @@ routerPublic.get('/busqueda-producto/:id?', controller.busquedaProd)
 routerPublic.get('/detalle-producto/:id', controller.detalleProd)
 routerPublic.get('/procesar-compra/', controller.procesarCompra)
 
+export default routerPublic
 
 
+
+
+// TODO: PARA ADMIN, hacer un private.router.js
 // // ! Renderizar el formulario de creación de película
 // routerPublic.get('/api/productos/create', controller.formCreate)
 // // ! Renderizar el formulario de edición de película
@@ -26,7 +30,6 @@ routerPublic.get('/procesar-compra/', controller.procesarCompra)
 
 
 
-// TODO: PARA ADMIN, hacer un private.router.js
 // // ! CRUD: R:READ => READ ONE / ALL | Método GET
 // // * http://localhost:8080/api/productos => READ ALL
 // // * http://localhost:8080/api/productos/:id => READ ONE
@@ -44,7 +47,6 @@ routerPublic.get('/procesar-compra/', controller.procesarCompra)
 // // * http://localhost:8080/api/productos/:id => DELETE
 // routerPublic.delete('/api/productos/:id', controller.remove)
 
-export default routerPublic
 
 /* 
 !ESTO ES PARA LA APRTE DE ADMIN DE ECO-ROOT SI LLEGAMOS
